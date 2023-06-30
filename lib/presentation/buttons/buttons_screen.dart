@@ -74,6 +74,7 @@ class _ButtonsView extends StatelessWidget {
 }
 
 class CustomButton extends StatelessWidget {
+  //button personalizado
   const CustomButton({super.key});
 
   @override
@@ -81,10 +82,11 @@ class CustomButton extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
 
     return ClipRRect(
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: BorderRadius.circular(20), //borde
       child: Material(
         color: colors.primary,
         child: InkWell(
+          //efecto ontap
           onTap: () {},
           child: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
