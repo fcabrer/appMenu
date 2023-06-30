@@ -176,6 +176,7 @@ class _CardType4 extends StatelessWidget {
             fit: BoxFit.cover, //fit como queremos q se adapt la img al espacio
           ),
           Align(
+            //caja de tres puntos
             alignment: Alignment.topRight,
             child: Container(
               decoration: const BoxDecoration(
