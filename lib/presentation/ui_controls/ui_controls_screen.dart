@@ -103,7 +103,7 @@ class _UiControlsviewState extends State<_UiControlsview> {
             title: const Text('Cena?'),
             value: wantsDinner,
             onChanged: (value) => setState(() {
-                  wantsBreakfast = !wantsDinner;
+                  wantsDinner = !wantsDinner;
                 })),
       ],
     );
