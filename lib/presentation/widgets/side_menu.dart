@@ -10,7 +10,7 @@ class SideMenu extends StatefulWidget {
   State<SideMenu> createState() => _SideMenuState();
 }
 
-int navDrawerIndex = 0;
+int navDrawerIndex = 4; //cual de las opciones de menu esta sellecionada
 
 class _SideMenuState extends State<SideMenu> {
   @override
@@ -27,8 +27,10 @@ class _SideMenuState extends State<SideMenu> {
 
           //funcionalidad al menu
           final menuItem = appMenuItem[value]; //selecciona los item
-          context.push(menuItem.link);
-          widget.scaffoldKey.currentState?.closeDrawer(); //empuja los links
+          context.push(
+              menuItem.link); //navega pero al volver el menu sigue abierto
+          widget.scaffoldKey.currentState
+              ?.closeDrawer(); //empuja los links y cierra el menu
         },
         children: [
           Padding(

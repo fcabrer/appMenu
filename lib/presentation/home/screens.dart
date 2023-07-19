@@ -1,3 +1,4 @@
+export 'package:widgets_app/presentation/counter/counter_screen.dart';
 export 'package:widgets_app/presentation/progress/progress_screen.dart';
 export 'package:flutter/material.dart';
 export 'package:widgets_app/presentation/animated/animated_screen.dart';
